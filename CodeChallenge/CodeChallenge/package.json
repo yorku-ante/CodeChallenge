@@ -1,0 +1,9 @@
+{
+  "name": "code-challenge",
+  "version": "0.0.0",
+  "description": "CodeChallenge",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  }
+}
