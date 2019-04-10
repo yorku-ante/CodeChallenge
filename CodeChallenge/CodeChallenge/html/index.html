@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Code Challenge</title>
+</head>
+<body>
+
+    <h1>Check a balance</h1>
+
+    <form action="query" method="get">
+        <table>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Check"></td>
+            </tr>  
+        </table>
+    </form>
+
+    <br />
+
+    <h1>Send Bitcoins</h1>
+
+    <form action="send" method="post">
+        <table>
+            <tr>
+                <td><label for="sender">Sender Address</label></td>
+                <td><input type="text" name="sender"></td>
+            </tr>
+            <tr>
+                <td><label for="reciever">Reciever Address</label></td>
+                <td><input type="text" name="reciever"></td>
+            </tr>
+            <tr>
+                <td><label for="amount">Amount</label></td>
+                <td><input type="text" name="amount"></td>
+            </tr>
+            <tr>
+                <td><label for="publicKey">Public Key</label></td>
+                <td><input type="text" name="publicKey"></td>
+            </tr>
+            <tr>
+                <td><label for="privateKey">Private Key</label></td>
+                <td><input type="text" name="privateKey"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Send"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

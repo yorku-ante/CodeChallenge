@@ -4,7 +4,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>CodeChallenge</Name>
     <RootNamespace>CodeChallenge</RootNamespace>
-    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+    <LastActiveSolutionConfig>Release|Any CPU</LastActiveSolutionConfig>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -29,9 +29,30 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="backend.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="server.js" />
+    <Compile Include="blockcypher.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="html\balance.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="html\confirm.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="html\error.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
+    <Content Include="html\index.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="html\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
